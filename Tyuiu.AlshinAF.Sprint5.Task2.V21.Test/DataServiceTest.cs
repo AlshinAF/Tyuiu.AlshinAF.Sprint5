@@ -1,4 +1,4 @@
-namespace Tyuiu.AlshinAF.Sprint5.Task1.V27.Test
+namespace Tyuiu.AlshinAF.Sprint5.Task2.V21.Test
 {
     [TestClass]
     public class DataServiceTest
