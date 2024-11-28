@@ -11,7 +11,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task0.V10.Lib
             double z = (1.6 * Math.Pow((double)x, 3) - 2.1 * Math.Pow((double)x, 2) + 7 * x);
             z = Math.Round(z, 3);
             File.WriteAllText(path, Convert.ToString(z));
-            return path;
+            return z;
         }
     }
 }
