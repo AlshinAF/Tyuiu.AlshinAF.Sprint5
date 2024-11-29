@@ -6,11 +6,11 @@ namespace Tyuiu.AlshinAF.Sprint5.Task5.V2.Lib
         public double LoadFromDataFile(string path)
         {
             string path1 = File.ReadAllText(path);
-            string value = path1.Replace(",", "");
+            path1 = path1.Replace(",", "");
   
             double res = 0;
             double count = 0;
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path1))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
