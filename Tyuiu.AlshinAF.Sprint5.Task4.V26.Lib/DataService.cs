@@ -7,7 +7,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task4.V26.Lib
         public double LoadFromDataFile(string path)
         {
             string path1 = File.ReadAllText(path);
-            double x = Math.Round(Convert.ToDouble(value), 3);
+            double x = Math.Round(Convert.ToDouble(path1), 3);
 
             double res = Math.Round(Math.Pow(x, 3) + Math.Sin(x) * Math.Cos(x), 3);
             return res;
