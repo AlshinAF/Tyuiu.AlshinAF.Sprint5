@@ -6,7 +6,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            
+
             int count = 0;
             using (StreamReader sr = new StreamReader(path))
             {
@@ -21,10 +21,14 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
                             count++;
                         }
 
-                }
+                    }
 
+                }
+                return count;
             }
-            return count;
         }
     }
 }
+
+
+
