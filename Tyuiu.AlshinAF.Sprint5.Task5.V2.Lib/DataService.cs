@@ -26,7 +26,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task5.V2.Lib
 
             }
             res = res / count;
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }
