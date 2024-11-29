@@ -8,7 +8,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task4.V26.Lib
         {
             string path1 = File.ReadAllText(path);
             string value = path1.Replace(".", ",");
-            string srtX = File.ReadAllText(path);   
+            string srtX = File.ReadAllText(value);   
             double res = Math.Round(Math.Pow(Convert.ToDouble(srtX), 3) + Math.Sin(Convert.ToDouble(srtX)) * Math.Cos(Convert.ToDouble(srtX)),3);
             return res;
         }
