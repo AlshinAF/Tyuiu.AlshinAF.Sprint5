@@ -5,17 +5,17 @@ namespace Tyuiu.AlshinAF.Sprint5.Task5.V2.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string path1 = File.ReadAllText(path);
-            path1 = path1.Replace(",", "");
-  
+            string[] s;
             double res = 0;
             double count = 0;
-            using (StreamReader reader = new StreamReader(path1))
+            using (StreamReader reader = new StreamReader(path))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                s = reader.ReadToEnd().Split(',');
+
+                foreach (string number in s)
+
                 {
-                    double x = Math.Round(Convert.ToDouble(line), 3);
+                    double x = Math.Round(Convert.ToDouble(number), 3);
                     if (x > 0)
                     {
                         count++;
