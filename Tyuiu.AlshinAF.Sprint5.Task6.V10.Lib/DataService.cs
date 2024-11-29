@@ -13,17 +13,12 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        string x = Convert.ToString(line[i]);
-                        x = x.Replace(",", "");
+                        string x = Convert.ToString(line);
+                        x = x.Replace(",", "").Replace(".", "");
                         if (x.Length == 4)
                         {
                             count++;
                         }
-
-                    }
 
                 }
 
