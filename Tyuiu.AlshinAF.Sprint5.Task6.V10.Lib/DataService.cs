@@ -6,15 +6,17 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            string s;
+            
             int count = 0;
             using (StreamReader sr = new StreamReader(path))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                        string x = Convert.ToString(line);
-                        if (x.Length == 4)
+                    string[] words = line.Split(' ');
+                    foreach (string word in words)
+                    {
+                        if (word.Length == 4)
                         {
                             count++;
                         }
