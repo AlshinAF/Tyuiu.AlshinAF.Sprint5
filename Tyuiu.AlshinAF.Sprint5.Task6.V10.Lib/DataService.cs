@@ -14,7 +14,6 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
                 while ((line = sr.ReadLine()) != null)
                 {
                         string x = Convert.ToString(line);
-                        x = x.Replace(",", " ").Replace(".", " ");
                         if (x.Length == 4)
                         {
                             count++;
