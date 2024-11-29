@@ -18,7 +18,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task7.V26.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string words = line.Replace("Hello", "word").Replace("Is", "word").Replace("First", "word").Replace("Program", "word");
+                    string words = line.Replace("Hello", "word").Replace("Is", "word").Replace("First", "word").Replace("Program", "word").Replace("My", "word");
                     strLine += words;
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
                     strLine = "";
