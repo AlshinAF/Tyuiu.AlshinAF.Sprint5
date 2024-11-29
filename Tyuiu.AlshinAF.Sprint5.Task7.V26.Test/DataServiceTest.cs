@@ -1,4 +1,5 @@
-namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Test
+using Tyuiu.AlshinAF.Sprint5.Task7.V26.Lib;
+namespace Tyuiu.AlshinAF.Sprint5.Task7.V26.Test
 {
     [TestClass]
     public class DataServiceTest
