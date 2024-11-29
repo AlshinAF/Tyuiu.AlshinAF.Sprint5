@@ -14,10 +14,11 @@ namespace Tyuiu.AlshinAF.Sprint5.Task5.V2.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (Convert.ToDouble(line) > 0)
+                    double x = Convert.ToDouble(line);
+                    if (x > 0)
                     {
                         count++;
-                        res = res + Convert.ToDouble(line);
+                        res = res + x;
                     }
 
                 }
