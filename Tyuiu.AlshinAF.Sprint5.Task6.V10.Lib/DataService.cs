@@ -16,7 +16,7 @@ namespace Tyuiu.AlshinAF.Sprint5.Task6.V10.Lib
                     string[] words = line.Split(' ');
                     foreach (string word in words)
                     {
-                        if (word.Length == 4)
+                        if (word.Length == 4+1)
                         {
                             count++;
                         }
